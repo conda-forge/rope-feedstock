@@ -7,7 +7,7 @@ Package license: GPL 2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: A python refactoring library...
+Summary: A python refactoring library
 
 
 
