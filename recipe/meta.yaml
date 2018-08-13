@@ -1,29 +1,23 @@
 {% set name = "rope" %}
-{% set version = "0.10.7" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "a09edfd2034fd50099a67822f9bd851fbd0f4e98d3b87519f6267b60e50d80d1" %}
-{% set build = 1 %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a108c445e1cd897fe19272ab7877d172e7faf3d4148c80e7d20faba42ea8f7b2
 
 build:
+  number: 0
   noarch: python
-  number: {{ build }}
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
+    - pip
 
   run:
     - python
