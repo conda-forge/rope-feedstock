@@ -1,5 +1,5 @@
 {% set name = "rope" %}
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d2830142c2e046f5fc26a022fe680675b6f48f81c7fc1f03a950706e746e9dfe
+  sha256: 658ad6705f43dcf3d6df379da9486529cf30e02d9ea14c5682aa80eb33b649e1
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -39,7 +39,7 @@ about:
   home: https://github.com/python-rope/rope
   license_file: COPYING
   license: GPL 2.0
-  summary: 'A python refactoring library'
+  summary: A python refactoring library
   dev_url: https://github.com/python-rope/rope
   doc_url: https://pypi.python.org/pypi/rope
   doc_source_url: https://github.com/python-rope/rope/tree/master/docs
