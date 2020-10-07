@@ -5,11 +5,13 @@ Home: https://github.com/python-rope/rope
 
 Package license: GPL 2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rope-feedstock/blob/master/LICENSE.txt)
 
 Summary: A python refactoring library
 
+Development: https://github.com/python-rope/rope
 
+Documentation: https://pypi.python.org/pypi/rope
 
 Current build status
 ====================
