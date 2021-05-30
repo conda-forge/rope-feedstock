@@ -42,7 +42,7 @@ test:
 about:
   home: https://github.com/python-rope/rope
   license_file: COPYING
-  license: GPL-2.0
+  license: LGPL-3.0-or-later
   summary: A python refactoring library
   dev_url: https://github.com/python-rope/rope
   doc_url: https://pypi.python.org/pypi/rope
