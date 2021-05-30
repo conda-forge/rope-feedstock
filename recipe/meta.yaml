@@ -10,17 +10,17 @@ source:
   sha256: 786b5c38c530d4846aa68a42604f61b4e69a493390e3ca11b88df0fbfdc3ed04
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
 
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -47,3 +47,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - jan-janssen
