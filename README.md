@@ -3,7 +3,7 @@ About rope
 
 Home: https://github.com/python-rope/rope
 
-Package license: GPL 2.0
+Package license: LGPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rope-feedstock/blob/master/LICENSE.txt)
 
