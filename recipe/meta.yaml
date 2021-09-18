@@ -1,5 +1,5 @@
 {% set name = "rope" %}
-{% set version = "0.19.0" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 64e6d747532e1f5c8009ec5aae3e5523a5bcedf516f39a750d57d8ed749d90da
+  sha256: 82cf7d2ffa5ccaee5a1ceeafcc31973e133df1237401aa226d61385e3f89b511
 
 build:
   number: 0
@@ -36,7 +36,7 @@ test:
     - rope.refactor.importutils
   commands:
     - pip check
-  requires: 
+  requires:
     - pip
 
 about:
