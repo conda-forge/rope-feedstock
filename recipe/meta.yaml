@@ -1,5 +1,5 @@
 {% set name = "rope" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3de1d1f1cf2412540c6a150067fe25298175e7c2b72455b6ca8395f61678da82
+  sha256: f48d708132c0e062b411308732ca13933b976486b4b53d1e804f94ed08d69503
 
 build:
   number: 0
