@@ -7,11 +7,9 @@ Home: https://github.com/python-rope/rope
 
 Package license: LGPL-3.0-or-later
 
-Summary: A python refactoring library
+Summary: a python refactoring library...
 
 Development: https://github.com/python-rope/rope
-
-Documentation: https://pypi.python.org/pypi/rope
 
 Current build status
 ====================
