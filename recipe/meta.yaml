@@ -1,5 +1,5 @@
 {% set name = "rope" %}
-{% set version = "1.12.0" %}
+{% set version = "1.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rope-{{ version }}.tar.gz
-  sha256: 93a1bb991fbf0426e8d415102d1c092ccc42e826ce9a42c4d61ce53d7786d9d9
+  sha256: 51437d2decc8806cd5e9dd1fd9c1306a6d9075ecaf78d191af85fc1dfface880
 
 build:
   noarch: python
