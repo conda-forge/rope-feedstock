@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: rope
-  version: "1.15.0"
+  version: "1.15.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/rope-${{ version }}.tar.gz
-  sha256: a9e82c9f5ca5a1054387c22fdf6c9de9e948af556138bda57d4da81d3378793a
+  sha256: 7ce304aa86350d9454533b6817d0c7c01301b0a4fad356d8372b5d77df35756f
 
 build:
   number: 0
